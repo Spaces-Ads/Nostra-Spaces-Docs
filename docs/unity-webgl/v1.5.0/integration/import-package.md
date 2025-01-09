@@ -14,7 +14,7 @@ sidebar_position: 1
 2. Select the **Spaces** Package and import all its contents.
 3. If you already have installed **Text Mesh Pro**, You can uncheck that package alone.
 
-![alt-textx](@site/static/importSpacesPackage.png)
+![alt-textx](../../../../static/importSpacesPackage.png)
 
 ### Next...
 We will proceed with a basic lifecycle integration of the Spaces Engine into your game.

@@ -6,6 +6,7 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
+import config from '../../docusaurus.config';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -45,34 +46,36 @@ export default function Home() {
       <main>
         {/* <HomepageFeatures /> */}
         <div style={{display:'flex', flexDirection:"row", justifyContent:'center', marginTop:'20px'}}>
-          <video height="450" style={{borderRadius:"10px", marginRight:'10px'}} autoPlay loop muted>
-            <source src="/videos/Amazon-Demo.mp4" type="video/mp4" />
+          <div style={{display:"flex", alignSelf:"center", width:"90%", alignSelf:'center', justifyContent:"center", overflow:'hidden'}}>
+            <video height="390" style={{borderRadius:"10px", marginRight:'10px'}} autoPlay loop muted>
+              <source src={config.baseUrl+"videos/Amazon-Demo.mp4"} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          <video height="390" style={{borderRadius:"10px", marginRight:'10px'}} autoPlay loop muted>
+            <source src={config.baseUrl+"videos/OnePlus-Demo.mp4"} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-        <video height="450" style={{borderRadius:"10px", marginRight:'10px'}} autoPlay loop muted>
-          <source src="/videos/OnePlus-Demo.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <video height="450" style={{borderRadius:"10px", marginRight:'10px'}} autoPlay loop muted>
-          <source src="/videos/Bingo-Demo.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <video height="450" style={{borderRadius:"10px", marginRight:'10px'}} autoPlay loop muted>
-          <source src="/videos/Jio-Demo.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <video height="450" style={{borderRadius:"10px", marginRight:'10px'}} autoPlay loop muted>
-          <source src="/videos/Swiggy-Demo-2.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <video height="450" style={{borderRadius:"10px", marginRight:'10px'}} autoPlay loop muted>
-          <source src="/videos/Swiggy-Demo-1.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <video height="450"  style={{borderRadius:"10px", marginRight:'10px'}} autoPlay loop muted>
-          <source src="/videos/SS-Demo.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+          <video height="390" style={{borderRadius:"10px", marginRight:'10px'}} autoPlay loop muted>
+            <source src={config.baseUrl+"videos/Bingo-Demo.mp4"} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <video height="390" style={{borderRadius:"10px", marginRight:'10px'}} autoPlay loop muted>
+            <source src={config.baseUrl+"videos/Jio-Demo.mp4"} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <video height="390" style={{borderRadius:"10px", marginRight:'10px'}} autoPlay loop muted>
+            <source src={config.baseUrl+"videos/Swiggy-Demo-2.mp4"} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <video height="390" style={{borderRadius:"10px", marginRight:'10px'}} autoPlay loop muted>
+            <source src={config.baseUrl+"videos/Swiggy-Demo-1.mp4"} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <video height="390"  style={{borderRadius:"10px", marginRight:'10px'}} autoPlay loop muted>
+            <source src={config.baseUrl+"videos/SS-Demo.mp4"} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
         </div>
       </main>
     </Layout>

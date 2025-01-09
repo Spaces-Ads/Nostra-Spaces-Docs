@@ -50,8 +50,8 @@ Each asset can be either a Prefab or a GameObject that displays or renders the a
 5. **Set Near & Far Plane Values**
     - Pass the Near & Far Clipping Plane Values that you use in your Camera.
 
-![alt-textx](@site/static/lifeCycle-assettracker2.png)
-![alt-textx](@site/static/lifeCycle-assettracker1.png)
+![alt-textx](../../../../static/lifeCycle-assettracker2.png)
+![alt-textx](../../../../static/lifeCycle-assettracker1.png)
 
 Your Tracker script will look similar to this
 ```csharp
@@ -204,8 +204,8 @@ You will have to modify the script based on where you will be assigning the asse
 3. **Modify the Scripts as Needed:**
 - Depending on how you plan to assign the asset, you may need to modify the scripts to fit your specific requirements.
 
-![alt-textx](@site/static/assetloader-1.png)
-![alt-textx](@site/static/assetloader-2.png)
+![alt-textx](../../../../static/assetloader-1.png)
+![alt-textx](../../../../static/assetloader-2.png)
 
 
 Your Loader script will look similar to this. You can access the asset by using the line ```(<AssetType>)asset;```
