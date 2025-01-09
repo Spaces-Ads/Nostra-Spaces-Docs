@@ -8,7 +8,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Nostra Spaces Engine1',
+  title: 'Nostra Spaces Engine',
   favicon: 'img/favicon.ico',
   tagline:'powered by spaces',
 
