@@ -8,7 +8,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Nostra Spaces Engine',
+  title: 'Nostra Spaces Engine1',
   favicon: 'img/favicon.ico',
   tagline:'powered by spaces',
 
@@ -16,7 +16,7 @@ const config = {
   url: 'https://gamespaces.xyz',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/home/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -26,7 +26,7 @@ const config = {
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-
+  // staticDirectories: ['static'],
   
 
   // Even if you don't use internationalization, you can use this field to set
