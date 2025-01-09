@@ -16,15 +16,15 @@ You will find these UI prefabs under ```.\Spaces\UI\```
 
 Drag and Attach ```SpacesAnnouncement.prefab``` in the appropriate game scene hierarchy.
 
-![alt-textx](../../../../static/announcement-1.png)
-![alt-textx](../../../../static/announcement-2.png)
+![alt-textx](@site/static/announcement-1.png)
+![alt-textx](@site/static/announcement-2.png)
 
 2. ```SpacesCheckoutUITrigger``` -  Is a UI Button which will be active, only when there is an active brand campaign. Users on clicking will see the ```SpacesCheckout``` UI.
 
 Drag and Attach ```SpacesCheckoutUITrigger.prefab``` in the appropriate location in your UI and game. This is most likely somewhere in your game home or menu page.4
 
-![alt-textx](../../../../static/checkoutUITrigger-1.png)
-![alt-textx](../../../../static/checkoutUITrigger-2.png)
+![alt-textx](@site/static/checkoutUITrigger-1.png)
+![alt-textx](@site/static/checkoutUITrigger-2.png)
 
 ## PASS INPUTS BASED ON YOUR GAME
 Head over to ```SpacesPostCampaignPanel``` under ```SpacesPersistent\SpacesCheckout.prefab```. 
@@ -40,7 +40,7 @@ In ```SpacesPostCampaignPanelUI.cs```, after ```spacesBackgroundPanel``` argumen
     ```
 In case you don't want to offer any such functions, just pass an empty function and an empty string "" respectively.
 
-![alt-textx](../../../../static/ui-postcampaignpanel-1.png)
+![alt-textx](@site/static/ui-postcampaignpanel-1.png)
 
 
 

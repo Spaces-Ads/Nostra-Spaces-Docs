@@ -13,12 +13,12 @@ Let's start with the very first scene of your game, the Loading Scene or Splash 
 ### If Your Game Already Has a Loading Scene
 1. Drag and Drop ```SpacesSplashScreen``` prefab at the bottom of the hierarchy in your Loading Scene. You can find it at ```\Spaces\UI```
 2. Drag and Drop ```SpacesLoader``` prefab at the bottom of the hierarchy in your Loading Scene. You can find it at ```\Spaces\UI```
-![alt-textx](../../../../static/lifeCycle-Load1.png)
-![alt-textx](../../../../static/lifeCycle-Load2.png)
+![alt-textx](@site/static/lifeCycle-Load1.png)
+![alt-textx](@site/static/lifeCycle-Load2.png)
 
 3. Drag and Drop  ```SpacesPersistent``` prefab at the bottom of the hierarchy in your Loading Scene. You can find it at ```\Spaces\UI```
-![alt-textx](../../../../static/lifeCycle-Load5.png)
-![alt-textx](../../../../static/lifeCycle-Load6.png)
+![alt-textx](@site/static/lifeCycle-Load5.png)
+![alt-textx](@site/static/lifeCycle-Load6.png)
 
 4. Call the `SpacesController.Load()` function in your game-loading logic. You need to place it at the very beginning of your game, before your game loading logic starts. (Note that this should specifically be before any addressables Loading if you have any).
 5. Ensure that the game starts only after the execution of the `SpacesController.Load()` function. Convert the parent function where you include `SpacesController.Load()` into an `async Task` function.
@@ -51,7 +51,7 @@ public void YourLoadingFunction(){
 }
 ```
 7. ```await SpacesController.Load;``` will also trigger a Loading Screen from ```SpacesSplashScreen```. If you want to disable it, You can comment out ```SpacesController.SpacesSplashLoadingScreenOn();``` and ```SpacesController.SpacesSplashLoadingScreenOff();``` within the ```Load()``` function in ```SpacesLoader.cs```
-![alt-textx](../../../../static/lifeCycle-Load7.png)
+![alt-textx](@site/static/lifeCycle-Load7.png)
 
 
 **In SpacesLoader.cs**
@@ -73,8 +73,8 @@ public class SpacesLoader : MonoBehaviour
 ### If Your Game Does Not Have a Loading Scene
 A basic loading scene is provided. Add it to your buil settings hierarchy above your game scene. You can find it at `./Assets/Spaces/UI/SpacesLoader.Unity`.
 
-![alt-textx](../../../../static/lifeCycle-Load3.png)
-![alt-textx](../../../../static/lifeCycle-Load4.png)
+![alt-textx](@site/static/lifeCycle-Load3.png)
+![alt-textx](@site/static/lifeCycle-Load4.png)
 
 Feel free to modify the loading screen UI as needed. By default, the scene includes a background image with a loading icon.
 
