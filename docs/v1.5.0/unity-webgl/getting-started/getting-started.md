@@ -16,7 +16,6 @@ You can check out the Onboard Demo for filling the Google Sheet and Form [here](
 
 Once we have the details, we will generate and send you a Spaces Unity Package in a few hours, using which you can proceed with integration. 
 
-<!-- You can Reach out to us [here](/docs/reachout-to-us/reach-us.md). -->
 
 
 
