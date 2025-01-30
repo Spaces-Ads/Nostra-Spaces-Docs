@@ -82,11 +82,20 @@ Do not alter the Build Path, set the Load Path to **Spaces Load Path**.
 
 ![alt-textx](@site/static/cdn-24.png)
 
-14. Now Call **```SpacesController.SetDefaultHostUrl(string loadPath);```** before where ever you are calling **```await SpacesController.Load();```** and pass the Load Path of your Catalog that you had saved in the previous step. If you are generating the Catalog Load Path in Runtime, make sure you fetch the path and pass it in **```SpacesController.SetDefaultHostUrl(string loadPath);```**
+14. If you are **NOT** using **```SpacesSplashScene```**, Call **```SpacesController.SetDefaultHostUrl(string loadPath);```** before where ever you are calling **```await SpacesController.Load();```** and pass the Load Path of your Catalog that you had saved in the previous step. If you are generating the Catalog Load Path in Runtime, make sure you fetch the path and pass it in **```SpacesController.SetDefaultHostUrl(string loadPath);```**
 
 ```csharp
     SpacesController.SetDefaultHostUrl("your-previous-default-addressables-group-load-path");
     await SpacesController.Load();
+```
+
+15. If you are using **```SpacesSplashScene```**, Call **```SetDefaultHostUrl(string loadPath);```** before calling **```Load();```** in **```SpacesLoaderInSplashScene.cs```** pass the Load Path of your Catalog that you had saved in the previous step. If you are generating the Catalog Load Path in Runtime, make sure you fetch the path and pass it in **```SetDefaultHostUrl(string loadPath);```**
+
+```csharp
+    private void Awake(){
+        SetDefaultHostUrl("your-previous-default-addressables-group-load-path"); //Set Default Host Url if any
+        Load();
+    }
 ```
 
 
